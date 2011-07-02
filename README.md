@@ -18,17 +18,17 @@ echo $tmp /* 12 */
 
 ## Documentation
 
-* (fromArray)[#fromArray]
-* (map)[#map]
-* (filter)[#filter]
-* (reduce)[#reduce]
-* (withEach)[#withEach]
-* (start)[#start] - Apply a function to the first element.
-* (end)[#end] - Apply a function to the last element.
-* (sort)[#sort]
-* (count)[#count]
-* (value)[#value] - Get the underlying array.
-* (isEmpty)[#isEmpty]
+* [fromArray](#fromArray)
+* [map](#map)
+* [filter](#filter)
+* [reduce](#reduce)
+* [withEach](#withEach)
+* [start](#start) - Apply a function to the first element.
+* [end](#end) - Apply a function to the last element.
+* [sort](#sort)
+* [count](#count)
+* [value](#value) - Get the underlying array.
+* [isEmpty](#isEmpty)
 
 <a name = "fromArray" />
 ### fromArray($array) - static
