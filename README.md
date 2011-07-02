@@ -30,6 +30,8 @@ echo $tmp /* 12 */
 * [value](#value) - Get the underlying array.
 * [isEmpty](#isEmpty)
 
+---------------------------------------
+
 <a name = "fromArray" />
 ### fromArray($array) - static
 
