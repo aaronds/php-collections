@@ -43,7 +43,9 @@ __Arguments__
 
 __Example__
 
+```php
 $set = Collection::fromArray(1,2,3,4);
+```
 
 ---------------------------------------
 
@@ -58,9 +60,11 @@ __Arguments__
 
 __Example__
 
+```php
 $set->map(function($val){
 	return $val * 2;
 });
+```
 
 ---------------------------------------
 
@@ -75,9 +79,11 @@ __Arguments__
 
 __Example__
 
+```php
 $set->filter(function($val){
 	return $val % 2 == 0;
 });
+```
 
 ---------------------------------------
 
@@ -95,9 +101,11 @@ __Arguments__
 
 __Example__
 
+```php
 $set->reduce(function($sum,$value){
 	return $sum + $value;
 },0);
+```
 
 ---------------------------------------
 
@@ -112,9 +120,11 @@ __Arguments__
 
 __Example__
 
+```php
 $set->withEach(function($val){
 	echo $val;
 });
+```
 
 ---------------------------------------
 
@@ -129,9 +139,11 @@ __Arguments__
 
 __Example__
 
+```php
 $set->start(function($val){
 	return "Start: " . $val;
 });
+```
 
 ---------------------------------------
 
@@ -146,9 +158,11 @@ __Arguments__
 
 __Example__
 
+```php
 $set->end(function($val){
 	return $val . " End";
 });
+```
 
 ---------------------------------------
 
@@ -163,9 +177,11 @@ __Arguments__
 
 __Example__
 
+```php
 $set->sort(function($a,$b){
 	return $a - $b;
 });
+```
 
 ---------------------------------------
 
@@ -176,7 +192,9 @@ Return the number of element in the collection.
 
 __Example__
 
+```php
 $set->count();
+```
 
 ---------------------------------------
 
@@ -187,8 +205,9 @@ Return the underlying array.
 
 __Example__
 
+```php
 $set->value();
-
+```
 ---------------------------------------
 
 <a name = "isEmpty" />
