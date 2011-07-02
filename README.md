@@ -38,6 +38,7 @@ echo $tmp /* 12 */
 Create a new collection from an array.
 
 __Arguments__
+
 * array - The array to use.
 
 __Example__
@@ -52,6 +53,7 @@ $set = Collection::fromArray(1,2,3,4);
 Apply a function to each element replacing the old values with the ones returned.
 
 __Arguments__
+
 * fn($value) - The function to apply.
 
 __Example__
@@ -68,6 +70,7 @@ $set->map(function($val){
 Remove elements which do not pass the filter.
 
 __Arguments__
+
 * fn($value) - The test function, should return true or false.
 
 __Example__
@@ -86,6 +89,7 @@ Reduce the elements to a single value.
 NB: Reduce returns the result of the reduction NOT a collection.
 
 __Arguments__
+
 * fn($mem,$val) - The reduction function  
 * $mem - The initial state of the reduction
 
@@ -103,6 +107,7 @@ $set->reduce(function($sum,$value){
 Call a function with each element in the collection.
 
 __Arguments__
+
 * fn($val) - The function. 
 
 __Example__
@@ -119,6 +124,7 @@ $set->withEach(function($val){
 Apply a function to the first element replacing the element with the return value.
 
 __Arguments__
+
 * fn($val) - The function. 
 
 __Example__
@@ -135,6 +141,7 @@ $set->start(function($val){
 Apply a function to the last element replacing the element with the return value.
 
 __Arguments__
+
 * fn($val) - The function. 
 
 __Example__
@@ -151,6 +158,7 @@ $set->end(function($val){
 Sort the contents of a collection using a callback function.
 
 __Arguments__
+
 * fn($a,$b) - The function. 
 
 __Example__
