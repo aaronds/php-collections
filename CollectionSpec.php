@@ -65,6 +65,22 @@ $describe("Collection instance",function($it){
 		});
 	});
 
+	$it("map supports passing multiple maps in one call",function($expect){
+		$set = getDefaultSet();
+		$set->map(
+			function($val){
+				return $val * 2;
+			},
+			function($val){
+				return $val * 2;
+			}
+		);
+
+		$set->start(function($val) use ($expect) {
+			$expect($val)->toEqual(4);
+		});
+	});
+
 	$it("reduces to a value",function($expect){
 		$set = getDefaultSet();
 

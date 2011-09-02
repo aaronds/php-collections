@@ -15,9 +15,13 @@ class Collection {
 		$this->value = $value;
 	}
 
-	public function map($fn){
-		$this->value = array_map($fn,$this->value);
+	public function map(){
+		$args = func_get_args();
 
+		foreach($args as &$fn){
+			$this->value = array_map($fn,$this->value);
+		} 
+		
 		return $this;
 	}
 
